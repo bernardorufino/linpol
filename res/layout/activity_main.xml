@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#BBBBBB"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BBBBBB"
+                android:padding="1dp">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Cell.Property"
+                        android:text="x"/>
+
+                    <TextView
+                        style="@style/Cell.Value.Side"
+                        android:text="0"/>
+
+                    <TextView
+                        android:id="@+id/coefficient"
+                        style="@style/Cell.Value.Interpol"/>
+
+                    <TextView
+                        style="@style/Cell.Value.Side"
+                        android:text="1"/>
+
+                    <TextView style="@style/Cell.Disabled"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/add_property"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="+ "
+                        android:textColor="#888888"
+                        android:textSize="34sp"/>
+                </TableRow>
+            </TableLayout>
+        </FrameLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD">
+
+        <Button
+            android:id="@+id/interpolate_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Interpolar"/>
+
+        <Button
+            android:id="@+id/choose_control_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Controle"/>
+    </LinearLayout>
+
+</LinearLayout>

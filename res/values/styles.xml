@@ -1,0 +1,61 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light"/>
+
+    <style name="Cell">
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="Cell.Value">
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="Cell.Property">
+        <item name="android:inputType">textCapCharacters|textNoSuggestions</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#666666</item>
+        <item name="android:textColor">#DDDDDD</item>
+    </style>
+
+    <style name="Cell.Value.Side">
+        <item name="android:background">#DDDDDD</item>
+    </style>
+
+    <style name="Cell.Value.Interpol">
+        <item name="android:background">#EEEEEE</item>
+    </style>
+
+    <style name="Cell.DeleteButton">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">#EE9999</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:text">-</item>
+    </style>
+
+    <style name="Cell.Disabled">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:text">-</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Cell.ControlButton">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">#88AADD</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:text">&lt;</item>
+    </style>
+
+</resources>
